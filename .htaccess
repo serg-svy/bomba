@@ -1,0 +1,33 @@
+AddDefaultCharset UTF-8
+RewriteEngine on
+
+Options -Indexes
+
+#sterge slash-urile duble
+RewriteCond %{REQUEST_URI} ^(.*?)\/{2,}(.*?)$
+RewriteRule . %1/%2 [L,R=301]
+RewriteCond %{THE_REQUEST} //
+RewriteRule .* https://%{HTTP_HOST}/$0 [R=301,L]
+
+#daca linkul nu are slash la sfarsit il adaugam
+RewriteCond %{REQUEST_URI} !\?
+RewriteCond %{REQUEST_URI} !\&
+RewriteCond %{REQUEST_URI} !\=
+RewriteCond %{REQUEST_URI} !\.
+RewriteCond %{REQUEST_URI} !\/$
+RewriteRule ^(.*[^\/])$ https://%{HTTP_HOST}/$1/ [R=301,L]
+
+# redirect catre link lowercase
+#RewriteCond expr "tolower(%{REQUEST_URI}) =~ /(.*)/"
+#RewriteRule [A-Z] %1 [R=301,L]
+
+#redirect catre versiunea sigura a site-ului
+#RewriteCond %{ENV:HTTPS} !=on
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php?/$1/    [L]
+
+RewriteCond $1 !^(index\.php|theme|ckeditor|kcfinder|retail_rocket\.xml|robots\.txt|public|app|dist|favicon.\ico)
+RewriteRule ^(.*)$ /index.php/$1 [L]

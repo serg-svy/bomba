@@ -1,0 +1,14 @@
+{
+    "name" : "bodarev/bomba",
+    "description" : "",
+    "require": {
+        "jasongrimes/paginator": "^1.0",
+        "phpoffice/phpspreadsheet": "^1.14",
+      "ext-curl": "*",
+      "ext-json": "*",
+        "elasticsearch/elasticsearch": "^7.17",
+      "ext-simplexml": "*",
+      "ext-dom": "*",
+      "ext-intl": "*"
+    }
+}

@@ -1,0 +1,71 @@
+/*
+Error: File to import not found or unreadable: compass/css3/transform.
+        on line 12 of _notific8.scss
+        from line 12 of jquery.notific8.scss
+
+7:  * Licensed under the BSD license.
+8:  * http://opensource.org/licenses/BSD-3-Clause
+9:  *\/
+10: 
+11: // import the style file
+12: @import "notific8";
+13: @import "themes";
+14: 
+15: // custom themes
+16: //@include theme($name, $border-color, $background-color, $close-background-color: $border-color, $text-color: #fff, $close-text-color: $text-color);
+17: // example:
+
+Backtrace:
+_notific8.scss:12
+jquery.notific8.scss:12
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:37:in `css_import?'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `map'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/var/lib/gems/2.7.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: compass/css3/transform.\A         on line 12 of _notific8.scss\A         from line 12 of jquery.notific8.scss\A \A 7:  * Licensed under the BSD license.\A 8:  * http://opensource.org/licenses/BSD-3-Clause\A 9:  */\A 10: \A 11: // import the style file\A 12: @import \"notific8\";\A 13: @import \"themes\";\A 14: \A 15: // custom themes\A 16: //@include theme($name, $border-color, $background-color, $close-background-color: $border-color, $text-color: #fff, $close-text-color: $text-color);\A 17: // example:"; }
